@@ -11,9 +11,16 @@ namespace OrtesisSearcher
 {
     public partial class formElementos : Form
     {
+        Clases.claseConexion cc = new Clases.claseConexion();
+        DataTable dt;
         public formElementos()
         {
             InitializeComponent();
+            cc.abrirConexion();
+            dt = cc.LeerBD("SELECT * FROM elementos");
+            dataGridView1.DataSource = dt;
+            cc.cerrarConexion();
+
         }
 
         private void bntAgregarElemento_Click(object sender, EventArgs e)
