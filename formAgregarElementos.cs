@@ -24,6 +24,7 @@ namespace OrtesisSearcher
             str += "VALUES ('" + txtDesc.Text.Trim().ToUpper() + "','" + txtTamano.Text.Trim().ToUpper() + "','" + txtDonante.Text.Trim().ToUpper() + "','" + txtEquipo.Text.Trim().ToUpper() + "','" + rchObservaciones.Text.Trim().ToUpper() + "')";
             cc.Ejecutar(str);
             cc.cerrarConexion();
+            this.Close();
         }
     }
 }

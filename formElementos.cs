@@ -16,17 +16,47 @@ namespace OrtesisSearcher
         public formElementos()
         {
             InitializeComponent();
+            cargarElementos();
+        }
+
+        private void cargarElementos()
+        {
             cc.abrirConexion();
             dt = cc.LeerBD("SELECT * FROM elementos");
-            dataGridView1.DataSource = dt;
+            dgvElementosCRUD.DataSource = dt;
             cc.cerrarConexion();
-
         }
 
         private void bntAgregarElemento_Click(object sender, EventArgs e)
         {
             formAgregarElementos FAE = new formAgregarElementos();
             FAE.ShowDialog();
+        }
+
+        private void btnBorrarElemento_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("¿Querés eliminar el elemento " + dgvElementosCRUD.CurrentRow.Cells[1].Value + "?", "Consulta", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.Yes)
+            {
+                string sql = "DELETE FROM elementos WHERE idElemento = " + dgvElementosCRUD.CurrentRow.Cells[0].Value;
+                cc.abrirConexion();
+                cc.Ejecutar(sql);
+                cc.cerrarConexion();
+                cargarElementos();
+            }
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            Clases.cElemento.idElemento = dgvElementosCRUD.CurrentRow.Cells[0].Value.ToString();
+            Clases.cElemento.descripcionElemento = dgvElementosCRUD.CurrentRow.Cells[1].Value.ToString();
+            Clases.cElemento.tamanoElemento = dgvElementosCRUD.CurrentRow.Cells[2].Value.ToString();
+            Clases.cElemento.donanteElemento = dgvElementosCRUD.CurrentRow.Cells[3].Value.ToString();
+            Clases.cElemento.equipoElemento = dgvElementosCRUD.CurrentRow.Cells[4].Value.ToString();
+            Clases.cElemento.observacionesElemento = dgvElementosCRUD.CurrentRow.Cells[5].Value.ToString();
+            formModificarElementos FME = new formModificarElementos();
+            FME.ShowDialog();
+            cargarElementos();
         }
     }
 }

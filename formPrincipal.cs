@@ -10,9 +10,6 @@ namespace OrtesisSearcher
         public formPrincipal()
         {
             InitializeComponent();
-            cc.abrirConexion();
-            MessageBox.Show("ok");
-            cc.cerrarConexion();
         }
 
         private void bntElementos_Click(object sender, EventArgs e)

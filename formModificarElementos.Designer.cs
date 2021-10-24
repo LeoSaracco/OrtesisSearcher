@@ -1,7 +1,7 @@
 ﻿
 namespace OrtesisSearcher
 {
-    partial class formAgregarElementos
+    partial class formModificarElementos
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,8 @@ namespace OrtesisSearcher
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bntGuardarElementos = new System.Windows.Forms.Button();
+            this.gbModificarElemento = new System.Windows.Forms.GroupBox();
+            this.bntModificarElementos = new System.Windows.Forms.Button();
             this.rchObservaciones = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtEquipo = new System.Windows.Forms.TextBox();
@@ -41,44 +41,44 @@ namespace OrtesisSearcher
             this.label2 = new System.Windows.Forms.Label();
             this.txtDesc = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.gbModificarElemento.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // gbModificarElemento
             // 
-            this.groupBox1.Controls.Add(this.bntGuardarElementos);
-            this.groupBox1.Controls.Add(this.rchObservaciones);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txtEquipo);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.txtDonante);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtTamano);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtDesc);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(5, 10);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(280, 335);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Cargue los datos";
+            this.gbModificarElemento.Controls.Add(this.bntModificarElementos);
+            this.gbModificarElemento.Controls.Add(this.rchObservaciones);
+            this.gbModificarElemento.Controls.Add(this.label5);
+            this.gbModificarElemento.Controls.Add(this.txtEquipo);
+            this.gbModificarElemento.Controls.Add(this.label4);
+            this.gbModificarElemento.Controls.Add(this.txtDonante);
+            this.gbModificarElemento.Controls.Add(this.label3);
+            this.gbModificarElemento.Controls.Add(this.txtTamano);
+            this.gbModificarElemento.Controls.Add(this.label2);
+            this.gbModificarElemento.Controls.Add(this.txtDesc);
+            this.gbModificarElemento.Controls.Add(this.label1);
+            this.gbModificarElemento.Location = new System.Drawing.Point(5, 10);
+            this.gbModificarElemento.Name = "gbModificarElemento";
+            this.gbModificarElemento.Size = new System.Drawing.Size(281, 335);
+            this.gbModificarElemento.TabIndex = 1;
+            this.gbModificarElemento.TabStop = false;
+            this.gbModificarElemento.Text = "Cargue los datos";
             // 
-            // bntGuardarElementos
+            // bntModificarElementos
             // 
-            this.bntGuardarElementos.Location = new System.Drawing.Point(25, 292);
-            this.bntGuardarElementos.Name = "bntGuardarElementos";
-            this.bntGuardarElementos.Size = new System.Drawing.Size(232, 28);
-            this.bntGuardarElementos.TabIndex = 11;
-            this.bntGuardarElementos.Text = "Guardar";
-            this.bntGuardarElementos.UseVisualStyleBackColor = true;
-            this.bntGuardarElementos.Click += new System.EventHandler(this.bntGuardarElementos_Click);
+            this.bntModificarElementos.Location = new System.Drawing.Point(25, 292);
+            this.bntModificarElementos.Name = "bntModificarElementos";
+            this.bntModificarElementos.Size = new System.Drawing.Size(232, 28);
+            this.bntModificarElementos.TabIndex = 11;
+            this.bntModificarElementos.Text = "Modificar";
+            this.bntModificarElementos.UseVisualStyleBackColor = true;
+            this.bntModificarElementos.Click += new System.EventHandler(this.bntModificarElementos_Click);
             // 
             // rchObservaciones
             // 
-            this.rchObservaciones.Location = new System.Drawing.Point(78, 169);
+            this.rchObservaciones.Location = new System.Drawing.Point(79, 169);
             this.rchObservaciones.Name = "rchObservaciones";
-            this.rchObservaciones.Size = new System.Drawing.Size(196, 98);
+            this.rchObservaciones.Size = new System.Drawing.Size(192, 98);
             this.rchObservaciones.TabIndex = 1;
             this.rchObservaciones.Text = "";
             // 
@@ -93,7 +93,7 @@ namespace OrtesisSearcher
             // 
             // txtEquipo
             // 
-            this.txtEquipo.Location = new System.Drawing.Point(78, 134);
+            this.txtEquipo.Location = new System.Drawing.Point(79, 134);
             this.txtEquipo.Name = "txtEquipo";
             this.txtEquipo.Size = new System.Drawing.Size(183, 20);
             this.txtEquipo.TabIndex = 7;
@@ -101,7 +101,7 @@ namespace OrtesisSearcher
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 137);
+            this.label4.Location = new System.Drawing.Point(33, 137);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 13);
             this.label4.TabIndex = 6;
@@ -155,26 +155,25 @@ namespace OrtesisSearcher
             this.label1.TabIndex = 0;
             this.label1.Text = "Descripción";
             // 
-            // formAgregarElementos
+            // formModificarElementos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(288, 355);
-            this.Controls.Add(this.groupBox1);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "formAgregarElementos";
+            this.Controls.Add(this.gbModificarElemento);
+            this.Name = "formModificarElementos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Agregar un Elemento";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Text = "Modificar elementos";
+            this.gbModificarElemento.ResumeLayout(false);
+            this.gbModificarElemento.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbModificarElemento;
+        private System.Windows.Forms.Button bntModificarElementos;
         private System.Windows.Forms.RichTextBox rchObservaciones;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtEquipo;
@@ -185,6 +184,5 @@ namespace OrtesisSearcher
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtDesc;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button bntGuardarElementos;
     }
 }
