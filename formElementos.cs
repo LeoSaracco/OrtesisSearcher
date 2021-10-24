@@ -22,15 +22,17 @@ namespace OrtesisSearcher
         private void cargarElementos()
         {
             cc.abrirConexion();
-            dt = cc.LeerBD("SELECT * FROM elementos");
+            dt = cc.LeerBD("SELECT * FROM vGetElementos");
             dgvElementosCRUD.DataSource = dt;
             cc.cerrarConexion();
+            dgvElementosCRUD.Columns[0].Visible = false;
         }
 
         private void bntAgregarElemento_Click(object sender, EventArgs e)
         {
             formAgregarElementos FAE = new formAgregarElementos();
             FAE.ShowDialog();
+            cargarElementos();
         }
 
         private void btnBorrarElemento_Click(object sender, EventArgs e)

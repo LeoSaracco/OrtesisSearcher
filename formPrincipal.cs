@@ -30,5 +30,10 @@ namespace OrtesisSearcher
             childForm.BringToFront();
             childForm.Show();
         }
+
+        private void btnBuscador_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new formBuscadorElementos());
+        }
     }
 }

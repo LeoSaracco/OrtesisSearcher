@@ -48,6 +48,8 @@ namespace OrtesisSearcher
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.PanelPrincipal = new System.Windows.Forms.Panel();
             this.bntElementos = new System.Windows.Forms.Button();
+            this.btnBuscador = new System.Windows.Forms.Button();
+            this.PanelPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
             // undoToolStripMenuItem
@@ -151,43 +153,54 @@ namespace OrtesisSearcher
             // panelChildForm
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.panelChildForm.Location = new System.Drawing.Point(218, 1);
-            this.panelChildForm.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.panelChildForm.Location = new System.Drawing.Point(187, 1);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(843, 618);
+            this.panelChildForm.Size = new System.Drawing.Size(723, 536);
             this.panelChildForm.TabIndex = 8;
             // 
             // PanelPrincipal
             // 
             this.PanelPrincipal.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.PanelPrincipal.Controls.Add(this.btnBuscador);
             this.PanelPrincipal.ForeColor = System.Drawing.Color.Coral;
             this.PanelPrincipal.Location = new System.Drawing.Point(2, 1);
-            this.PanelPrincipal.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.PanelPrincipal.Name = "PanelPrincipal";
-            this.PanelPrincipal.Size = new System.Drawing.Size(217, 618);
+            this.PanelPrincipal.Size = new System.Drawing.Size(186, 536);
             this.PanelPrincipal.TabIndex = 9;
             // 
             // bntElementos
             // 
             this.bntElementos.Location = new System.Drawing.Point(0, 0);
             this.bntElementos.Name = "bntElementos";
-            this.bntElementos.Size = new System.Drawing.Size(199, 107);
+            this.bntElementos.Size = new System.Drawing.Size(171, 93);
             this.bntElementos.TabIndex = 10;
             this.bntElementos.Text = "Elementos";
             this.bntElementos.UseVisualStyleBackColor = true;
             this.bntElementos.Click += new System.EventHandler(this.bntElementos_Click);
             // 
+            // btnBuscador
+            // 
+            this.btnBuscador.ForeColor = System.Drawing.Color.Black;
+            this.btnBuscador.Location = new System.Drawing.Point(0, 98);
+            this.btnBuscador.Name = "btnBuscador";
+            this.btnBuscador.Size = new System.Drawing.Size(171, 93);
+            this.btnBuscador.TabIndex = 11;
+            this.btnBuscador.Text = "Buscador";
+            this.btnBuscador.UseVisualStyleBackColor = true;
+            this.btnBuscador.Click += new System.EventHandler(this.btnBuscador_Click);
+            // 
             // formPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1061, 618);
+            this.ClientSize = new System.Drawing.Size(909, 536);
             this.Controls.Add(this.bntElementos);
             this.Controls.Add(this.PanelPrincipal);
             this.Controls.Add(this.panelChildForm);
             this.Name = "formPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
+            this.PanelPrincipal.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -212,6 +225,7 @@ namespace OrtesisSearcher
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.Panel PanelPrincipal;
         private System.Windows.Forms.Button bntElementos;
+        private System.Windows.Forms.Button btnBuscador;
     }
 }
 

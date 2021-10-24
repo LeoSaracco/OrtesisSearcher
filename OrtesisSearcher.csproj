@@ -59,6 +59,12 @@
     <Compile Include="formAgregarElementos.designer.cs">
       <DependentUpon>formAgregarElementos.cs</DependentUpon>
     </Compile>
+    <Compile Include="formBuscadorElementos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBuscadorElementos.Designer.cs">
+      <DependentUpon>formBuscadorElementos.cs</DependentUpon>
+    </Compile>
     <Compile Include="formElementos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="formAgregarElementos.resx">
       <DependentUpon>formAgregarElementos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBuscadorElementos.resx">
+      <DependentUpon>formBuscadorElementos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formElementos.resx">
       <DependentUpon>formElementos.cs</DependentUpon>

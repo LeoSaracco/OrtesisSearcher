@@ -79,7 +79,7 @@ namespace OrtesisSearcher
             this.rchObservaciones.Location = new System.Drawing.Point(79, 169);
             this.rchObservaciones.Name = "rchObservaciones";
             this.rchObservaciones.Size = new System.Drawing.Size(192, 98);
-            this.rchObservaciones.TabIndex = 1;
+            this.rchObservaciones.TabIndex = 5;
             this.rchObservaciones.Text = "";
             // 
             // label5
@@ -96,7 +96,7 @@ namespace OrtesisSearcher
             this.txtEquipo.Location = new System.Drawing.Point(79, 134);
             this.txtEquipo.Name = "txtEquipo";
             this.txtEquipo.Size = new System.Drawing.Size(183, 20);
-            this.txtEquipo.TabIndex = 7;
+            this.txtEquipo.TabIndex = 4;
             // 
             // label4
             // 
@@ -112,7 +112,7 @@ namespace OrtesisSearcher
             this.txtDonante.Location = new System.Drawing.Point(79, 97);
             this.txtDonante.Name = "txtDonante";
             this.txtDonante.Size = new System.Drawing.Size(183, 20);
-            this.txtDonante.TabIndex = 5;
+            this.txtDonante.TabIndex = 3;
             // 
             // label3
             // 
@@ -128,7 +128,7 @@ namespace OrtesisSearcher
             this.txtTamano.Location = new System.Drawing.Point(79, 56);
             this.txtTamano.Name = "txtTamano";
             this.txtTamano.Size = new System.Drawing.Size(183, 20);
-            this.txtTamano.TabIndex = 3;
+            this.txtTamano.TabIndex = 2;
             // 
             // label2
             // 
