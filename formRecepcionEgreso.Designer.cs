@@ -31,7 +31,7 @@ namespace OrtesisSearcher
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tbPageEgreso = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tbPageRecepcion = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.txtDni = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -41,7 +41,7 @@ namespace OrtesisSearcher
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.cmbEstado = new System.Windows.Forms.ComboBox();
+            this.cmbEstadoEgreso = new System.Windows.Forms.ComboBox();
             this.txtLugarEntrega = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dtpEntrega = new System.Windows.Forms.DateTimePicker();
@@ -52,16 +52,28 @@ namespace OrtesisSearcher
             this.label8 = new System.Windows.Forms.Label();
             this.btnEgreso = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnDevolverElemento = new System.Windows.Forms.Button();
+            this.rchObservacionesIngreso = new System.Windows.Forms.RichTextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.cmbEstadoIngreso = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dtpDevolucionIngreso = new System.Windows.Forms.DateTimePicker();
+            this.txtLugarRecepcion = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tbPageEgreso.SuspendLayout();
+            this.tbPageRecepcion.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tbPageEgreso);
-            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tbPageRecepcion);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -80,15 +92,16 @@ namespace OrtesisSearcher
             this.tbPageEgreso.Text = "Egreso";
             this.tbPageEgreso.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // tbPageRecepcion
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(192, 74);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tbPageRecepcion.Controls.Add(this.groupBox3);
+            this.tbPageRecepcion.Location = new System.Drawing.Point(4, 22);
+            this.tbPageRecepcion.Name = "tbPageRecepcion";
+            this.tbPageRecepcion.Padding = new System.Windows.Forms.Padding(3);
+            this.tbPageRecepcion.Size = new System.Drawing.Size(557, 400);
+            this.tbPageRecepcion.TabIndex = 1;
+            this.tbPageRecepcion.Text = "Recepción";
+            this.tbPageRecepcion.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -165,7 +178,7 @@ namespace OrtesisSearcher
             this.groupBox2.Controls.Add(this.dtpEntrega);
             this.groupBox2.Controls.Add(this.txtLugarEntrega);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.cmbEstado);
+            this.groupBox2.Controls.Add(this.cmbEstadoEgreso);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Location = new System.Drawing.Point(6, 83);
             this.groupBox2.Name = "groupBox2";
@@ -183,17 +196,17 @@ namespace OrtesisSearcher
             this.label4.TabIndex = 2;
             this.label4.Text = "Estado";
             // 
-            // cmbEstado
+            // cmbEstadoEgreso
             // 
-            this.cmbEstado.FormattingEnabled = true;
-            this.cmbEstado.Items.AddRange(new object[] {
+            this.cmbEstadoEgreso.FormattingEnabled = true;
+            this.cmbEstadoEgreso.Items.AddRange(new object[] {
             "Bueno",
             "Regular",
             "Malo"});
-            this.cmbEstado.Location = new System.Drawing.Point(99, 19);
-            this.cmbEstado.Name = "cmbEstado";
-            this.cmbEstado.Size = new System.Drawing.Size(133, 21);
-            this.cmbEstado.TabIndex = 4;
+            this.cmbEstadoEgreso.Location = new System.Drawing.Point(99, 19);
+            this.cmbEstadoEgreso.Name = "cmbEstadoEgreso";
+            this.cmbEstadoEgreso.Size = new System.Drawing.Size(133, 21);
+            this.cmbEstadoEgreso.TabIndex = 4;
             // 
             // txtLugarEntrega
             // 
@@ -282,6 +295,105 @@ namespace OrtesisSearcher
             this.btnModificar.UseVisualStyleBackColor = true;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.txtLugarRecepcion);
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.label10);
+            this.groupBox3.Controls.Add(this.dtpDevolucionIngreso);
+            this.groupBox3.Controls.Add(this.btnDevolverElemento);
+            this.groupBox3.Controls.Add(this.rchObservacionesIngreso);
+            this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.cmbEstadoIngreso);
+            this.groupBox3.Controls.Add(this.label13);
+            this.groupBox3.Location = new System.Drawing.Point(15, 6);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(536, 300);
+            this.groupBox3.TabIndex = 8;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Datos del elemento";
+            // 
+            // btnDevolverElemento
+            // 
+            this.btnDevolverElemento.Location = new System.Drawing.Point(12, 259);
+            this.btnDevolverElemento.Name = "btnDevolverElemento";
+            this.btnDevolverElemento.Size = new System.Drawing.Size(518, 33);
+            this.btnDevolverElemento.TabIndex = 13;
+            this.btnDevolverElemento.Text = "Recepcionar elemento";
+            this.btnDevolverElemento.UseVisualStyleBackColor = true;
+            this.btnDevolverElemento.Click += new System.EventHandler(this.btnDevolverElemento_Click);
+            // 
+            // rchObservacionesIngreso
+            // 
+            this.rchObservacionesIngreso.Location = new System.Drawing.Point(110, 134);
+            this.rchObservacionesIngreso.Name = "rchObservacionesIngreso";
+            this.rchObservacionesIngreso.Size = new System.Drawing.Size(420, 119);
+            this.rchObservacionesIngreso.TabIndex = 8;
+            this.rchObservacionesIngreso.Text = "";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(26, 137);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(78, 13);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "Observaciones";
+            // 
+            // cmbEstadoIngreso
+            // 
+            this.cmbEstadoIngreso.FormattingEnabled = true;
+            this.cmbEstadoIngreso.Items.AddRange(new object[] {
+            "Bueno",
+            "Regular",
+            "Malo"});
+            this.cmbEstadoIngreso.Location = new System.Drawing.Point(110, 19);
+            this.cmbEstadoIngreso.Name = "cmbEstadoIngreso";
+            this.cmbEstadoIngreso.Size = new System.Drawing.Size(122, 21);
+            this.cmbEstadoIngreso.TabIndex = 4;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(64, 22);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(40, 13);
+            this.label13.TabIndex = 2;
+            this.label13.Text = "Estado";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(43, 60);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(61, 13);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "Devolución";
+            // 
+            // dtpDevolucionIngreso
+            // 
+            this.dtpDevolucionIngreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDevolucionIngreso.Location = new System.Drawing.Point(110, 60);
+            this.dtpDevolucionIngreso.Name = "dtpDevolucionIngreso";
+            this.dtpDevolucionIngreso.Size = new System.Drawing.Size(122, 20);
+            this.dtpDevolucionIngreso.TabIndex = 14;
+            // 
+            // txtLugarRecepcion
+            // 
+            this.txtLugarRecepcion.Location = new System.Drawing.Point(110, 95);
+            this.txtLugarRecepcion.Name = "txtLugarRecepcion";
+            this.txtLugarRecepcion.Size = new System.Drawing.Size(305, 20);
+            this.txtLugarRecepcion.TabIndex = 17;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(5, 98);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(99, 13);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "Lugar de recepción";
+            // 
             // formRecepcionEgreso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -295,10 +407,13 @@ namespace OrtesisSearcher
             this.Text = "Recepción - Egreso";
             this.tabControl1.ResumeLayout(false);
             this.tbPageEgreso.ResumeLayout(false);
+            this.tbPageRecepcion.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -307,7 +422,7 @@ namespace OrtesisSearcher
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tbPageEgreso;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tbPageRecepcion;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dtpDevolucion;
@@ -315,7 +430,7 @@ namespace OrtesisSearcher
         private System.Windows.Forms.DateTimePicker dtpEntrega;
         private System.Windows.Forms.TextBox txtLugarEntrega;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cmbEstado;
+        private System.Windows.Forms.ComboBox cmbEstadoEgreso;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtDni;
@@ -328,5 +443,15 @@ namespace OrtesisSearcher
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnEgreso;
         private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnDevolverElemento;
+        private System.Windows.Forms.RichTextBox rchObservacionesIngreso;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cmbEstadoIngreso;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DateTimePicker dtpDevolucionIngreso;
+        private System.Windows.Forms.TextBox txtLugarRecepcion;
+        private System.Windows.Forms.Label label11;
     }
 }
