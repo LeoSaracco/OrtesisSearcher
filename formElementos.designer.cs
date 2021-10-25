@@ -63,6 +63,7 @@ namespace OrtesisSearcher
             this.dgvElementosCRUD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvElementosCRUD.Size = new System.Drawing.Size(668, 355);
             this.dgvElementosCRUD.TabIndex = 0;
+            this.dgvElementosCRUD.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvElementosCRUD_CellDoubleClick);
             // 
             // bntAgregarElemento
             // 
@@ -76,7 +77,7 @@ namespace OrtesisSearcher
             // 
             // btnBorrarElemento
             // 
-            this.btnBorrarElemento.Location = new System.Drawing.Point(148, 10);
+            this.btnBorrarElemento.Location = new System.Drawing.Point(139, 10);
             this.btnBorrarElemento.Name = "btnBorrarElemento";
             this.btnBorrarElemento.Size = new System.Drawing.Size(111, 41);
             this.btnBorrarElemento.TabIndex = 2;
@@ -86,7 +87,7 @@ namespace OrtesisSearcher
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(265, 10);
+            this.btnModificar.Location = new System.Drawing.Point(256, 10);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(111, 41);
             this.btnModificar.TabIndex = 3;

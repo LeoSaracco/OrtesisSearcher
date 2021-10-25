@@ -60,5 +60,18 @@ namespace OrtesisSearcher
             FME.ShowDialog();
             cargarElementos();
         }
+
+        private void dgvElementosCRUD_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Clases.cElemento.idElemento = dgvElementosCRUD.CurrentRow.Cells[0].Value.ToString();
+            Clases.cElemento.descripcionElemento = dgvElementosCRUD.CurrentRow.Cells[1].Value.ToString();
+            Clases.cElemento.tamanoElemento = dgvElementosCRUD.CurrentRow.Cells[2].Value.ToString();
+            Clases.cElemento.donanteElemento = dgvElementosCRUD.CurrentRow.Cells[3].Value.ToString();
+            Clases.cElemento.equipoElemento = dgvElementosCRUD.CurrentRow.Cells[4].Value.ToString();
+            Clases.cElemento.observacionesElemento = dgvElementosCRUD.CurrentRow.Cells[5].Value.ToString();
+            formRecepcionEgreso FRE = new formRecepcionEgreso();
+            FRE.ShowDialog();
+            cargarElementos();
+        }
     }
 }
