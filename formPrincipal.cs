@@ -35,5 +35,10 @@ namespace OrtesisSearcher
         {
             openChildFormInPanel(new formBuscadorElementos());
         }
+
+        private void btnHistorico_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new formHistorico());
+        }
     }
 }

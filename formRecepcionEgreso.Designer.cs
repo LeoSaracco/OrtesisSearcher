@@ -45,6 +45,12 @@ namespace OrtesisSearcher
             this.cmbEstadoEgreso = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtTel = new System.Windows.Forms.TextBox();
+            this.txtDomicilio = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtCel = new System.Windows.Forms.TextBox();
             this.txtDni = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -62,12 +68,6 @@ namespace OrtesisSearcher
             this.label9 = new System.Windows.Forms.Label();
             this.cmbEstadoIngreso = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.txtTel = new System.Windows.Forms.TextBox();
-            this.txtDomicilio = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtCel = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tbPageEgreso.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -133,7 +133,7 @@ namespace OrtesisSearcher
             // 
             this.btnEgreso.Location = new System.Drawing.Point(9, 272);
             this.btnEgreso.Name = "btnEgreso";
-            this.btnEgreso.Size = new System.Drawing.Size(518, 33);
+            this.btnEgreso.Size = new System.Drawing.Size(559, 33);
             this.btnEgreso.TabIndex = 12;
             this.btnEgreso.Text = "Dar salida";
             this.btnEgreso.UseVisualStyleBackColor = true;
@@ -248,6 +248,54 @@ namespace OrtesisSearcher
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de la persona";
             // 
+            // txtTel
+            // 
+            this.txtTel.Location = new System.Drawing.Point(33, 70);
+            this.txtTel.Name = "txtTel";
+            this.txtTel.Size = new System.Drawing.Size(125, 20);
+            this.txtTel.TabIndex = 4;
+            // 
+            // txtDomicilio
+            // 
+            this.txtDomicilio.Location = new System.Drawing.Point(402, 70);
+            this.txtDomicilio.Name = "txtDomicilio";
+            this.txtDomicilio.Size = new System.Drawing.Size(172, 20);
+            this.txtDomicilio.TabIndex = 6;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(4, 73);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(25, 13);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "Tel.";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(347, 73);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(49, 13);
+            this.label14.TabIndex = 10;
+            this.label14.Text = "Domicilio";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(182, 73);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(25, 13);
+            this.label15.TabIndex = 7;
+            this.label15.Text = "Cel.";
+            // 
+            // txtCel
+            // 
+            this.txtCel.Location = new System.Drawing.Point(213, 70);
+            this.txtCel.Name = "txtCel";
+            this.txtCel.Size = new System.Drawing.Size(125, 20);
+            this.txtCel.TabIndex = 5;
+            // 
             // txtDni
             // 
             this.txtDni.Location = new System.Drawing.Point(33, 29);
@@ -302,7 +350,7 @@ namespace OrtesisSearcher
             this.tbPageRecepcion.Location = new System.Drawing.Point(4, 22);
             this.tbPageRecepcion.Name = "tbPageRecepcion";
             this.tbPageRecepcion.Padding = new System.Windows.Forms.Padding(3);
-            this.tbPageRecepcion.Size = new System.Drawing.Size(608, 484);
+            this.tbPageRecepcion.Size = new System.Drawing.Size(589, 484);
             this.tbPageRecepcion.TabIndex = 1;
             this.tbPageRecepcion.Text = "Recepción";
             this.tbPageRecepcion.UseVisualStyleBackColor = true;
@@ -405,54 +453,6 @@ namespace OrtesisSearcher
             this.label13.Size = new System.Drawing.Size(40, 13);
             this.label13.TabIndex = 2;
             this.label13.Text = "Estado";
-            // 
-            // txtTel
-            // 
-            this.txtTel.Location = new System.Drawing.Point(33, 70);
-            this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(125, 20);
-            this.txtTel.TabIndex = 4;
-            // 
-            // txtDomicilio
-            // 
-            this.txtDomicilio.Location = new System.Drawing.Point(402, 70);
-            this.txtDomicilio.Name = "txtDomicilio";
-            this.txtDomicilio.Size = new System.Drawing.Size(172, 20);
-            this.txtDomicilio.TabIndex = 6;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(4, 73);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(25, 13);
-            this.label12.TabIndex = 5;
-            this.label12.Text = "Tel.";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(347, 73);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(49, 13);
-            this.label14.TabIndex = 10;
-            this.label14.Text = "Domicilio";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(182, 73);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(25, 13);
-            this.label15.TabIndex = 7;
-            this.label15.Text = "Cel.";
-            // 
-            // txtCel
-            // 
-            this.txtCel.Location = new System.Drawing.Point(213, 70);
-            this.txtCel.Name = "txtCel";
-            this.txtCel.Size = new System.Drawing.Size(125, 20);
-            this.txtCel.TabIndex = 5;
             // 
             // formRecepcionEgreso
             // 

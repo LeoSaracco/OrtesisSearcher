@@ -47,8 +47,9 @@ namespace OrtesisSearcher
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.PanelPrincipal = new System.Windows.Forms.Panel();
-            this.bntElementos = new System.Windows.Forms.Button();
             this.btnBuscador = new System.Windows.Forms.Button();
+            this.bntElementos = new System.Windows.Forms.Button();
+            this.btnHistorico = new System.Windows.Forms.Button();
             this.PanelPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -161,22 +162,13 @@ namespace OrtesisSearcher
             // PanelPrincipal
             // 
             this.PanelPrincipal.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.PanelPrincipal.Controls.Add(this.btnHistorico);
             this.PanelPrincipal.Controls.Add(this.btnBuscador);
             this.PanelPrincipal.ForeColor = System.Drawing.Color.Coral;
             this.PanelPrincipal.Location = new System.Drawing.Point(2, 1);
             this.PanelPrincipal.Name = "PanelPrincipal";
             this.PanelPrincipal.Size = new System.Drawing.Size(186, 536);
             this.PanelPrincipal.TabIndex = 9;
-            // 
-            // bntElementos
-            // 
-            this.bntElementos.Location = new System.Drawing.Point(0, 0);
-            this.bntElementos.Name = "bntElementos";
-            this.bntElementos.Size = new System.Drawing.Size(171, 93);
-            this.bntElementos.TabIndex = 10;
-            this.bntElementos.Text = "Elementos";
-            this.bntElementos.UseVisualStyleBackColor = true;
-            this.bntElementos.Click += new System.EventHandler(this.bntElementos_Click);
             // 
             // btnBuscador
             // 
@@ -188,6 +180,27 @@ namespace OrtesisSearcher
             this.btnBuscador.Text = "Buscador";
             this.btnBuscador.UseVisualStyleBackColor = true;
             this.btnBuscador.Click += new System.EventHandler(this.btnBuscador_Click);
+            // 
+            // bntElementos
+            // 
+            this.bntElementos.Location = new System.Drawing.Point(0, 0);
+            this.bntElementos.Name = "bntElementos";
+            this.bntElementos.Size = new System.Drawing.Size(171, 93);
+            this.bntElementos.TabIndex = 10;
+            this.bntElementos.Text = "Elementos";
+            this.bntElementos.UseVisualStyleBackColor = true;
+            this.bntElementos.Click += new System.EventHandler(this.bntElementos_Click);
+            // 
+            // btnHistorico
+            // 
+            this.btnHistorico.ForeColor = System.Drawing.Color.Black;
+            this.btnHistorico.Location = new System.Drawing.Point(-2, 197);
+            this.btnHistorico.Name = "btnHistorico";
+            this.btnHistorico.Size = new System.Drawing.Size(171, 93);
+            this.btnHistorico.TabIndex = 12;
+            this.btnHistorico.Text = "Historico";
+            this.btnHistorico.UseVisualStyleBackColor = true;
+            this.btnHistorico.Click += new System.EventHandler(this.btnHistorico_Click);
             // 
             // formPrincipal
             // 
@@ -226,6 +239,7 @@ namespace OrtesisSearcher
         private System.Windows.Forms.Panel PanelPrincipal;
         private System.Windows.Forms.Button bntElementos;
         private System.Windows.Forms.Button btnBuscador;
+        private System.Windows.Forms.Button btnHistorico;
     }
 }
 

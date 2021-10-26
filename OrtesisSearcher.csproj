@@ -65,11 +65,23 @@
     <Compile Include="formBuscadorElementos.Designer.cs">
       <DependentUpon>formBuscadorElementos.cs</DependentUpon>
     </Compile>
+    <Compile Include="formDetalleHistorico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDetalleHistorico.Designer.cs">
+      <DependentUpon>formDetalleHistorico.cs</DependentUpon>
+    </Compile>
     <Compile Include="formElementos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formElementos.designer.cs">
       <DependentUpon>formElementos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHistorico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHistorico.Designer.cs">
+      <DependentUpon>formHistorico.cs</DependentUpon>
     </Compile>
     <Compile Include="formModificarElementos.cs">
       <SubType>Form</SubType>
@@ -97,8 +109,14 @@
     <EmbeddedResource Include="formBuscadorElementos.resx">
       <DependentUpon>formBuscadorElementos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formDetalleHistorico.resx">
+      <DependentUpon>formDetalleHistorico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formElementos.resx">
       <DependentUpon>formElementos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHistorico.resx">
+      <DependentUpon>formHistorico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formModificarElementos.resx">
       <DependentUpon>formModificarElementos.cs</DependentUpon>
