@@ -33,6 +33,7 @@ namespace OrtesisSearcher
             this.dgvEgresosHistorico = new System.Windows.Forms.DataGridView();
             this.gbIngresoHistorico = new System.Windows.Forms.GroupBox();
             this.dgvIngresoHistoricos = new System.Windows.Forms.DataGridView();
+            this.btnExcel = new System.Windows.Forms.Button();
             this.gbEgresoHistorico.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEgresosHistorico)).BeginInit();
             this.gbIngresoHistorico.SuspendLayout();
@@ -85,11 +86,25 @@ namespace OrtesisSearcher
             this.dgvIngresoHistoricos.Size = new System.Drawing.Size(1255, 210);
             this.dgvIngresoHistoricos.TabIndex = 1;
             // 
+            // btnExcel
+            // 
+            this.btnExcel.BackColor = System.Drawing.SystemColors.MenuText;
+            this.btnExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcel.ForeColor = System.Drawing.SystemColors.Info;
+            this.btnExcel.Location = new System.Drawing.Point(1301, 31);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.Size = new System.Drawing.Size(94, 30);
+            this.btnExcel.TabIndex = 4;
+            this.btnExcel.Text = "&Excel";
+            this.btnExcel.UseVisualStyleBackColor = false;
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
+            // 
             // formDetalleHistorico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1307, 495);
+            this.ClientSize = new System.Drawing.Size(1401, 495);
+            this.Controls.Add(this.btnExcel);
             this.Controls.Add(this.gbIngresoHistorico);
             this.Controls.Add(this.gbEgresoHistorico);
             this.MaximizeBox = false;
@@ -111,5 +126,6 @@ namespace OrtesisSearcher
         private System.Windows.Forms.DataGridView dgvEgresosHistorico;
         private System.Windows.Forms.GroupBox gbIngresoHistorico;
         private System.Windows.Forms.DataGridView dgvIngresoHistoricos;
+        private System.Windows.Forms.Button btnExcel;
     }
 }

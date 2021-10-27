@@ -25,5 +25,10 @@ namespace OrtesisSearcher
             dgvIngresoHistoricos.DataSource = dt;
             cc.cerrarConexion();
         }
+
+        private void btnExcel_Click(object sender, EventArgs e)
+        {
+            cc.ExportarDataGridViewExcel(dgvEgresosHistorico, dgvIngresoHistoricos);
+        }
     }
 }

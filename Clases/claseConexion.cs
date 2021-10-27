@@ -112,5 +112,88 @@ namespace OrtesisSearcher.Clases
                     }
             }
         }
+        public void ExportarDataGridViewExcel(DataGridView tabla, DataGridView tabla2)
+        {
+
+            try
+            {
+                Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
+
+                //Tabla egresos
+                excel.Application.Workbooks.Add(true);
+                Microsoft.Office.Interop.Excel.Worksheet sheet = excel.ActiveSheet as Microsoft.Office.Interop.Excel.Worksheet;
+                sheet.Name = "Egresos";
+                int IndiceColumna = 0;
+
+                foreach (DataGridViewColumn col in tabla.Columns) // Columnas
+                {
+
+                    IndiceColumna++;
+
+                    excel.Cells[1, IndiceColumna] = col.Name;
+
+                }
+
+                int IndeceFila = 0;
+
+                foreach (DataGridViewRow row in tabla.Rows) // Filas
+                {
+
+                    IndeceFila++;
+
+                    IndiceColumna = 0;
+
+                    foreach (DataGridViewColumn col in tabla.Columns)
+                    {
+
+                        IndiceColumna++;
+
+                        excel.Cells[IndeceFila + 1, IndiceColumna] = row.Cells[col.Name].Value;
+
+                    }
+
+                }
+
+                //Tabla ingresos
+                excel.Sheets.Add();
+                Microsoft.Office.Interop.Excel.Worksheet sheet2 = excel.ActiveSheet as Microsoft.Office.Interop.Excel.Worksheet;
+                sheet2.Name = "Ingresos";
+                int IndiceColumna2 = 0;
+
+                foreach (DataGridViewColumn col in tabla2.Columns) // Columnas
+                {
+
+                    IndiceColumna2++;
+
+                    excel.Cells[1, IndiceColumna2] = col.Name;
+
+                }
+
+                int IndeceFila2 = 0;
+
+                foreach (DataGridViewRow row in tabla2.Rows) // Filas
+                {
+
+                    IndeceFila2++;
+
+                    IndiceColumna2 = 0;
+
+                    foreach (DataGridViewColumn col in tabla2.Columns)
+                    {
+
+                        IndiceColumna2++;
+
+                        excel.Cells[IndeceFila2 + 1, IndiceColumna2] = row.Cells[col.Name].Value;
+
+                    }
+
+                }
+                excel.Visible = true;
+            }
+            catch (Exception MsjError)
+            {
+                MessageBox.Show(MsjError.Message);
+            }
+        }
     }
 }
