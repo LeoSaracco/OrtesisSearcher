@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Clases\cElemento.cs" />
     <Compile Include="Clases\claseConexion.cs" />
+    <Compile Include="Clases\cMenu.cs" />
     <Compile Include="formAgregarElementos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +83,12 @@
     </Compile>
     <Compile Include="formHistorico.Designer.cs">
       <DependentUpon>formHistorico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMenuOpciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMenuOpciones.Designer.cs">
+      <DependentUpon>formMenuOpciones.cs</DependentUpon>
     </Compile>
     <Compile Include="formModificarElementos.cs">
       <SubType>Form</SubType>
@@ -117,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formHistorico.resx">
       <DependentUpon>formHistorico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMenuOpciones.resx">
+      <DependentUpon>formMenuOpciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formModificarElementos.resx">
       <DependentUpon>formModificarElementos.cs</DependentUpon>

@@ -28,7 +28,9 @@ namespace OrtesisSearcher
 
         private void btnExcel_Click(object sender, EventArgs e)
         {
+            Cursor.Current = Cursors.WaitCursor;
             cc.ExportarDataGridViewExcel(dgvEgresosHistorico, dgvIngresoHistoricos);
+            Cursor.Current = Cursors.Default;
         }
     }
 }

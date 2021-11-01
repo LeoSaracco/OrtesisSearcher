@@ -65,6 +65,7 @@ namespace OrtesisSearcher
             this.dgvBuscarElementos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBuscarElementos.Size = new System.Drawing.Size(692, 356);
             this.dgvBuscarElementos.TabIndex = 3;
+            this.dgvBuscarElementos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBuscarElementos_CellDoubleClick);
             // 
             // gbBuscadorInput
             // 
